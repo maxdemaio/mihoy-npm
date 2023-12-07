@@ -3,8 +3,8 @@ import clipboardy from 'clipboardy';
 export function mihoy() {
   const processArgs = process.argv.slice(2);
 
-  if (processArgs.length === 1) {
-    const mihoy = processArgs[0];
+  if (processArgs.length >= 1) {
+    const mihoy = processArgs.join(" ");
 
     const lines = [];
 
@@ -29,6 +29,6 @@ export function mihoy() {
       console.error(`\nError copying to clipboard: ${"message" in err ? err.message : err}`);
     }
   } else {
-    console.error('Please provide exactly one command line argument.');
+    console.error('Please provide at least one command line argument.');
   }
 }
