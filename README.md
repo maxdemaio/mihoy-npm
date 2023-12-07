@@ -4,11 +4,11 @@ mihoy?
 
 ---
 ```
-npm i mihoy
+npm i -g mihoy
 ```
 
 ```
-npx mihoy unless?
+npx mihoy "unless?"
 ```
 
 - unless?
@@ -31,3 +31,28 @@ npx mihoy unless?
     - unless?
   - unless?
 - unless?
+
+```
+npx mihoy ayo
+```
+
+- ayo
+  - ayo
+    - ayo
+      - ayo
+        - ayo
+          - ayo
+            - ayo
+              - ayo
+                - ayo
+                  - ayo
+                  - ayo
+                - ayo
+              - ayo
+            - ayo
+          - ayo
+        - ayo
+      - ayo
+    - ayo
+  - ayo
+- ayo
