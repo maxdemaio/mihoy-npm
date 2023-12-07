@@ -4,18 +4,18 @@ export function mihoy() {
   const processArgs = process.argv.slice(2);
 
   if (processArgs.length === 1) {
-    const unless = processArgs[0];
+    const mihoy = processArgs[0];
 
     const lines = [];
 
     for (let i = 0; i < 10; i++) {
-      console.log(" ".repeat(i * 2) + `- ${unless}`);
-      lines.push(" ".repeat(i * 2) + `- ${unless}`);
+      console.log(" ".repeat(i * 2) + `- ${mihoy}`);
+      lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
     }
 
     for (let i = 9; i >= 0; i--) {
-      console.log(" ".repeat(i * 2) + `- ${unless}`);
-      lines.push(" ".repeat(i * 2) + `- ${unless}`);
+      console.log(" ".repeat(i * 2) + `- ${mihoy}`);
+      lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
     }
 
     // Join lines
