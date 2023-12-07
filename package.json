@@ -7,9 +7,6 @@
     "node": ">=14.0.0"
   },
   "bin": {
-    "unless": "./scripts/bin.js"
-  },
-  "dependencies": {
-    "clipboardy": "^4.0.0"
+    "mihoy": "./scripts/bin.js"
   }
 }
