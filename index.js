@@ -1,6 +1,6 @@
 import clipboardy from 'clipboardy';
 
-export function unless() {
+export function deeznuts() {
   const processArgs = process.argv.slice(2);
 
   if (processArgs.length === 1) {
