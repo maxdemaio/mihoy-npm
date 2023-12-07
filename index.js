@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import clipboardy from 'clipboardy';
 
 export function mihoy() {
   const processArgs = process.argv.slice(2);
@@ -18,32 +18,13 @@ export function mihoy() {
       lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
     }
 
-    // Join lines
-    const output = lines.join("\n");
-
-    // Platform-specific clipboard command
-    const clipboardCommand =
-      process.platform === "win32"
-        ? "clip"
-        : process.platform === "darwin"
-        ? "pbcopy"
-        : "xclip -selection clipboard";
+    // Join lines and copy the output to the clipboard
+    const output = lines.join('\n');
 
     // Copy the output to the clipboard
-    try {
-      execSync(`echo "${output}" | ${clipboardCommand}`);
-      console.log("Copied to clipboard!");
-    } catch (error) {
-      console.error("Unable to copy to clipboard.");
-      console.log(
-        "Please install xclip on your system to enable clipboard functionality."
-      );
-      console.log("On Debian/Ubuntu-based systems:");
-      console.log("sudo apt-get install xclip");
-      console.log("On Red Hat/Fedora-based systems:");
-      console.log("sudo yum install xclip");
-    }
+    clipboardy.writeSync(output);
+    console.log(`Copied to clipboard!`);
   } else {
-    console.error("Please provide exactly one command line argument.");
+    console.error('Please provide exactly one command line argument.');
   }
 }
