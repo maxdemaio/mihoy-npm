@@ -1,14 +1,14 @@
-# unless-npm
+# deeznuts-npm
 
-unless?
+deeznuts?
 
 ---
 ```
-npm i unless
+npm i deeznuts
 ```
 
 ```
-npx unless unless?
+npx deeznuts unless?
 ```
 
 - unless?
