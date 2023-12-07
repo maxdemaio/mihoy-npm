@@ -1,14 +1,14 @@
-# deeznuts-npm
+# mihoy-npm
 
-deeznuts?
+mihoy?
 
 ---
 ```
-npm i deeznuts
+npm i mihoy
 ```
 
 ```
-npx deeznuts unless?
+npx mihoy unless?
 ```
 
 - unless?

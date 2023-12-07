@@ -1,6 +1,6 @@
 import clipboardy from 'clipboardy';
 
-export function deeznuts() {
+export function mihoy() {
   const processArgs = process.argv.slice(2);
 
   if (processArgs.length === 1) {

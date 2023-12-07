@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { unless } from "../index.js";
+import { mihoy } from "../index.js";
 
-unless();
+mihoy();
