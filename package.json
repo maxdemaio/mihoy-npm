@@ -1,6 +1,6 @@
 {
   "name": "mihoy",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -8,5 +8,8 @@
   },
   "bin": {
     "mihoy": "./scripts/bin.js"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0"
   }
 }
