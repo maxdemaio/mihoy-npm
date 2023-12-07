@@ -1,0 +1,15 @@
+{
+  "name": "unless",
+  "version": "0.0.7",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bin": {
+    "unless": "./scripts/bin.js"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0"
+  }
+}
