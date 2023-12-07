@@ -1,4 +1,4 @@
-import clipboardy from 'clipboardy';
+import { execSync } from 'child_process';
 
 export function mihoy() {
   const processArgs = process.argv.slice(2);
@@ -18,12 +18,24 @@ export function mihoy() {
       lines.push(" ".repeat(i * 2) + `- ${unless}`);
     }
 
-    // Join lines and copy the output to the clipboard
+    // Join lines
     const output = lines.join('\n');
 
+    // Platform-specific clipboard command
+    const clipboardCommand =
+      process.platform === 'win32'
+        ? 'clip'
+        : process.platform === 'darwin'
+        ? 'pbcopy'
+        : 'xclip -selection clipboard';
+
     // Copy the output to the clipboard
-    clipboardy.writeSync(output);
-    console.log(`Copied to clipboard!`);
+    try {
+      execSync(`echo "${output}" | ${clipboardCommand}`);
+      console.log('Copied to clipboard!');
+    } catch (error) {
+      console.error('Unable to copy to clipboard:', error.message);
+    }
   } else {
     console.error('Please provide exactly one command line argument.');
   }
