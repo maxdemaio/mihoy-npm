@@ -56,3 +56,28 @@ npx mihoy ayo
     - ayo
   - ayo
 - ayo
+
+```
+npx mihoy this too
+```
+
+- this too
+  - this too
+    - this too
+      - this too
+        - this too
+          - this too
+            - this too
+              - this too
+                - this too
+                  - this too
+                  - this too
+                - this too
+              - this too
+            - this too
+          - this too
+        - this too
+      - this too
+    - this too
+  - this too
+- this too
