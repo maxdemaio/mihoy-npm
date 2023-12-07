@@ -3,9 +3,12 @@
 unless?
 
 ---
+```
+npm i unless
+```
 
 ```
-npx run unless unless?
+npx unless unless?
 ```
 
 - unless?
