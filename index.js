@@ -22,8 +22,12 @@ export function mihoy() {
     const output = lines.join('\n');
 
     // Copy the output to the clipboard
-    clipboardy.writeSync(output);
-    console.log(`Copied to clipboard!`);
+    try {
+      clipboardy.writeSync(output);
+      console.log(`Copied to clipboard!`);
+    } catch (err) {
+      console.error(`\nError copying to clipboard: ${"message" in err ? err.message : err}`);
+    }
   } else {
     console.error('Please provide exactly one command line argument.');
   }
