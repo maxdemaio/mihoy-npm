@@ -28,5 +28,3 @@ export function mihoy() {
     console.error('Please provide exactly one command line argument.');
   }
 }
-
-unless();
