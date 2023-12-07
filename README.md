@@ -8,29 +8,29 @@ npm i -g mihoy
 ```
 
 ```
-npx mihoy "unless ?"
+npx mihoy "ween wao"
 ```
 
-- unless ?
-  - unless ?
-    - unless ?
-      - unless ?
-        - unless ?
-          - unless ?
-            - unless ?
-              - unless ?
-                - unless ?
-                  - unless ?
-                  - unless ?
-                - unless ?
-              - unless ?
-            - unless ?
-          - unless ?
-        - unless ?
-      - unless ?
-    - unless ?
-  - unless ?
-- unless ?
+- ween wao
+  - ween wao
+    - ween wao
+      - ween wao
+        - ween wao
+          - ween wao
+            - ween wao
+              - ween wao
+                - ween wao
+                  - ween wao
+                  - ween wao
+                - ween wao
+              - ween wao
+            - ween wao
+          - ween wao
+        - ween wao
+      - ween wao
+    - ween wao
+  - ween wao
+- ween wao
 
 ```
 npx mihoy ayo
