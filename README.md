@@ -9,30 +9,7 @@ mihoy?
 npm i -g mihoy
 ```
 
-```
-npx mihoy "ween wao"
-```
-
-- ween wao
-  - ween wao
-    - ween wao
-      - ween wao
-        - ween wao
-          - ween wao
-            - ween wao
-              - ween wao
-                - ween wao
-                  - ween wao
-                  - ween wao
-                - ween wao
-              - ween wao
-            - ween wao
-          - ween wao
-        - ween wao
-      - ween wao
-    - ween wao
-  - ween wao
-- ween wao
+## Examples
 
 ```
 npx mihoy ayo
@@ -43,16 +20,6 @@ npx mihoy ayo
     - ayo
       - ayo
         - ayo
-          - ayo
-            - ayo
-              - ayo
-                - ayo
-                  - ayo
-                  - ayo
-                - ayo
-              - ayo
-            - ayo
-          - ayo
         - ayo
       - ayo
     - ayo
@@ -68,18 +35,23 @@ npx mihoy this too
     - this too
       - this too
         - this too
-          - this too
-            - this too
-              - this too
-                - this too
-                  - this too
-                  - this too
-                - this too
-              - this too
-            - this too
-          - this too
         - this too
       - this too
     - this too
   - this too
 - this too
+
+```
+npx mihoy -o test
+```
+
+- test
+  - test
+    - test
+      - test
+        - test
+        - test
+      - test
+    - test
+  - test
+- test
