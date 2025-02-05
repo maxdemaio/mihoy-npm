@@ -2,26 +2,36 @@ import clipboardy from 'clipboardy';
 
 export function mihoy() {
   const processArgs = process.argv.slice(2);
-
-  if (processArgs.length >= 1) {
-    const mihoy = processArgs.join(" ");
-
+  const flagIndex = processArgs.indexOf('-o');
+  const useCompactFormat = flagIndex !== -1;
+  
+  // Remove '-o' from arguments if present
+  const words = useCompactFormat 
+    ? processArgs.filter(arg => arg !== '-o')
+    : processArgs;
+  
+  if (words.length >= 1) {
+    const mihoy = words.join(" ");
     const lines = [];
-
-    for (let i = 0; i < 10; i++) {
-      console.log(" ".repeat(i * 2) + `- ${mihoy}`);
-      lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
+    
+    if (useCompactFormat) {
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          lines.push(" ".repeat(j * 2) + `- ${mihoy}`);
+        }
+      }
+    } else {
+      for (let i = 0; i < 5; i++) {
+        lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
+      }
+      for (let i = 4; i >= 0; i--) {
+        lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
+      }
     }
-
-    for (let i = 9; i >= 0; i--) {
-      console.log(" ".repeat(i * 2) + `- ${mihoy}`);
-      lines.push(" ".repeat(i * 2) + `- ${mihoy}`);
-    }
-
-    // Join lines and copy the output to the clipboard
+    
     const output = lines.join('\n');
-
-    // Copy the output to the clipboard
+    console.log(output);
+    
     try {
       clipboardy.writeSync(output);
       console.log(`Copied to clipboard!`);
